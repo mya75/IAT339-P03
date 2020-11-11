@@ -16,7 +16,6 @@ h1, h2, h3 {
 h1 {
   font-size: 3rem;
   font-family: 'Poppins', sans-serif;
-  letter-spacing: .2rem;
 }
 
 h2 {
@@ -68,17 +67,6 @@ img {
   margin-bottom: 0;
   font-variant: small-caps;
   border-style: none;
-}
-
-.markup, .markup-indent {
-  margin: 0;
-  font-size: 0.9rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-}
-
-.markup-indent {
-  text-indent: 20px;
 }
 
 .nav {
@@ -150,7 +138,6 @@ button:hover {
   color: black;
 }
 
-
 input[type=text] {
   width: 20%;
   display: inline-block;
@@ -189,13 +176,13 @@ input[type=text] {
   border-style: solid;
   border-width: 0.5px;
   border-color: rgba(214, 212, 212, 0.5);
-  padding: 25px;
+  padding: 1.5rem;
 }
 
-.grid-row-markup {
+.grid-row-code {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  padding: 10px;
+  padding: 1rem;
   border-style: solid;
   border-width: 0.5px;
   border-color: rgba(229, 229, 229, 0.5);
@@ -208,8 +195,9 @@ input[type=text] {
 }
 
 .color-container {
-  height: 4rem;
-  width: 4rem;
+  display: inline-block;
+  height: 5rem;
+  width: 10rem;
 }
 
 .container {
