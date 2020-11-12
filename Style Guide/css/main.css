@@ -69,16 +69,18 @@ img {
   border-style: none;
 }
 
-.nav {
+nav {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 2rem;
   overflow: hidden;
-  background-color: white;
+  opacity: 1;
 }
 
-.nav li {
+
+nav>li {
   float: left;
+
 }
 
 li a {
@@ -110,7 +112,7 @@ a {
   transition: all .2s ease-in-out;
 }
 
-#link:hover {
+.link:hover {
   background-color: black;
   color: white;
 }
