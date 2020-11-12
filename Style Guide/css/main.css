@@ -147,26 +147,6 @@ input[type=text] {
   padding: 10px 10px 10px 10px;
 }
 
-.listing {
-  border: thin silver solid;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-  text-indent: 0;
-}
-
-.listing a {
-  padding: 5px;
-  text-align: center;
-}
-
-.listing a, .listing a:visited {
-  text-decoration: none;
-  color: black;
-}
-
 .grid-row {
   display: block;
   background-color: #fff;
