@@ -1,8 +1,9 @@
 /* Font and box styling for different tag elements */
 body {
   font-family: 'Poppins', sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   margin: 0;
+  padding: 0;
 }
 
 #top {
@@ -77,10 +78,8 @@ nav {
   opacity: 1;
 }
 
-
 nav>li {
   float: left;
-
 }
 
 li a {
