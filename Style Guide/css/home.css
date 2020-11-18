@@ -59,13 +59,13 @@ header {
   color: black;
 }
 
-nav {
+.nav {
   position: fixed;
   padding: 2rem;
   z-index: 999;
 }
 
-ul {
+.nav ul {
   list-style-type: none;
   display: inline-flex;
 }
