@@ -84,20 +84,21 @@ nav>li {
 
 li a {
   display: block;
-  color: black;
+  color: gold;
   font-weight: bold;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   cursor: pointer;
+
 }
 
 li a.active {
-  color: gold;
+  color: white;
 }
 
 li a:hover {
-  color: gold;
+  color: white;
 }
 
 a {

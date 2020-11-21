@@ -68,9 +68,10 @@ header {
 .nav ul {
   list-style-type: none;
   display: inline-flex;
+  text-shadow: 3px 3px 5px black;
 }
 
-li>a {
+.nav li>a {
   font-size: 2rem;
   letter-spacing: .2rem;
 }
@@ -93,6 +94,7 @@ li>a {
   align-items: center;
   text-align: center;
   padding: 4rem;
+  padding-bottom: 6rem;
   padding-left: 6rem;
   padding-right: 6rem;
 }
@@ -105,7 +107,7 @@ p {
 #portfolio-content {
   background-color: #FFF0F5;
   padding: 1rem;
-padding-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 
 #portfolio-content h2 {
@@ -194,16 +196,25 @@ h3 {
 footer {
   text-align: center;
   color: black;
-  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 1.5rem;
+  background: url(https://static.wixstatic.com/media/5c688cc2a5ec4ad2b86ed53d5df46f47.png/v1/fill/w_1803,h_898,al_c,q_90,usm_0.66_1.00_0.01/5c688cc2a5ec4ad2b86ed53d5df46f47.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 30vh;
+  position: relative;
+  z-index: 1;
 }
 
 .social-icon {
   color: black;
+  font-size: 2rem;
 }
 
 .social-icons li {
@@ -218,7 +229,6 @@ footer {
 .fa-facebook:hover {
   background-color: #3d5b99;
 }
-
 
 .fa-linkedin {
   padding: 1rem;
@@ -238,8 +248,7 @@ footer {
   background-color: #5a32a3;
 }
 
-
-.footer{
+.footer {
   background-color: black;
   color: #FFD700;
   font-weight: bold;
@@ -254,7 +263,7 @@ footer {
   border: none;
 }
 
- .footer:hover {
+.footer:hover {
   background-color: #FFD700;
   color: black;
 }
