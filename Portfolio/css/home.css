@@ -104,6 +104,8 @@ p {
 
 #portfolio-content {
   background-color: #FFF0F5;
+  padding: 1rem;
+padding-bottom: 4rem;
 }
 
 #portfolio-content h2 {
@@ -183,19 +185,76 @@ h3 {
   text-align: left;
 }
 
-footer>h1 {
-  color: black;
-  text-align: center;
-}
-
-footer {
-  display: grid;
-  justify-content: center;
-  padding-bottom: 4rem;
-}
-
 .link {
   padding-left: 3rem !important;
   padding-right: 3rem !important;
   margin: auto !important;
+}
+
+footer {
+  text-align: center;
+  color: black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.social-icon {
+  color: black;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.fa-facebook {
+  padding: 1rem;
+  transition: .5s;
+}
+
+.fa-facebook:hover {
+  background-color: #3d5b99;
+}
+
+
+.fa-linkedin {
+  padding: 1rem;
+  transition: .5s;
+}
+
+.fa-linkedin:hover {
+  background-color: #0073a4;
+}
+
+.fa-github {
+  padding: 1rem;
+  transition: .5s;
+}
+
+.fa-github:hover {
+  background-color: #5a32a3;
+}
+
+
+.footer{
+  background-color: black;
+  color: #FFD700;
+  font-weight: bold;
+  padding: .6rem 1.8rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: none;
+}
+
+ .footer:hover {
+  background-color: #FFD700;
+  color: black;
 }
