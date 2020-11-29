@@ -26,7 +26,25 @@ body {
 .header_text {
   color: pink;
   padding: 4rem;
+  padding-bottom: 1rem;
+
   margin-top: 6rem;
+}
+
+.intro {
+  color: black;
+  padding-left: 2rem;
+  padding-right: 4rem;
+}
+
+.intro h2 {
+  color: #FF6262;
+}
+
+.grid-row {
+  display: block;
+  background-color: white;
+  border-style: none;
 }
 
 footer {
