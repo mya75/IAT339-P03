@@ -56,6 +56,13 @@ body {
   border-style: none;
 }
 
+
+img.animated-gif{
+  width: 250px;
+  height: auto;
+}
+
+
 footer {
   text-align: center;
   color: black;
