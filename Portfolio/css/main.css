@@ -59,6 +59,21 @@ img {
   letter-spacing: .2rem;
 }
 
+.hd1 a {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  letter-spacing: .2rem;
+  text-decoration: underline;
+}
+
+.hd1 a:hover {
+  color: gold;
+}
+
 .hd2 {
   font-weight: bold;
   font-size: 2.2rem;
@@ -90,7 +105,6 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
   cursor: pointer;
-
 }
 
 li a.active {
@@ -181,7 +195,6 @@ input[type=text] {
 
 .container {
   margin: 1rem;
-  padding-left: 2rem;
 }
 
 .image-link {
