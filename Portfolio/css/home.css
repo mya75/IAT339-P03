@@ -115,27 +115,31 @@ p {
   padding: 1rem;
 }
 
-.videoContainer {
+.text {
+  line-height: 1.5 !important;
+}
+
+.photoContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.videoItem {
+.photoItem {
   width: 100%;
   position: relative;
 }
 
-.videoItem {
+.photoItem {
   object-fit: cover;
 }
 
 @media (max-width: 991.98px) {
-  .videoContainer {
+  .photoContainer {
     background-color: #000000;
     grid-template-columns: 1fr 1fr;
   }
 
-  .videoItem.videoItem--3 {
+  .vphotoItem.photoItem--3 {
     grid-column: span 2;
     max-width: 20rem;
     margin: 4rem auto;
@@ -143,7 +147,7 @@ p {
 }
 
 @media (max-width: 575.98px) {
-  .videoContainer {
+  .photoContainer {
     grid-template-columns: 1fr;
   }
 }
