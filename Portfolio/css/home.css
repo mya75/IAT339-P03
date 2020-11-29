@@ -7,7 +7,7 @@ header {
 }
 
 header {
-  background: url(https://static.wixstatic.com/media/5c688cc2a5ec4ad2b86ed53d5df46f47.png/v1/fill/w_1803,h_898,al_c,q_90,usm_0.66_1.00_0.01/5c688cc2a5ec4ad2b86ed53d5df46f47.webp);
+  background: url(../img/bg.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -31,12 +31,12 @@ header {
 
 .header_text h1 {
   font-size: 5rem;
-  color: orange;
+  color: white;
 }
 
 .header_text h2 {
   font-size: 3rem;
-  color: brown;
+  color: gold;
 }
 
 .header_text a {
@@ -107,7 +107,7 @@ p {
 #portfolio-content {
   background-color: #FFF0F5;
   padding: 1rem;
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
 }
 
 #portfolio-content h2 {
@@ -199,13 +199,13 @@ h3 {
 
 footer {
   text-align: center;
-  color: black;
+  color: white;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
-  background: url(https://static.wixstatic.com/media/5c688cc2a5ec4ad2b86ed53d5df46f47.png/v1/fill/w_1803,h_898,al_c,q_90,usm_0.66_1.00_0.01/5c688cc2a5ec4ad2b86ed53d5df46f47.webp);
+  background: url(../img/footer.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -217,7 +217,7 @@ footer {
 }
 
 .social-icon {
-  color: black;
+  color: white;
   font-size: 2rem;
 }
 
