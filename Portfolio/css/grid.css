@@ -33,7 +33,13 @@
 
 .grid-col-5of10 {
   width: 50%;
-  text-align: left;
+  text-align: center;
+  padding: 2rem;
+}
+
+.grid-col-5of10-re {
+  width: 50%;
+  text-align: center;
   padding: 2rem;
 }
 
@@ -45,7 +51,7 @@
 
 /* @media queries to collapse the columns when width is less than "x" em */
 @media (max-width: 80em) {
-  .grid-col-5of10 {
+  .grid-col-5of10, .grid-col-5of10-re {
     width: 50%;
   }
 
@@ -64,8 +70,26 @@
 }
 
 @media (max-width: 50em) {
-  .grid-col-5of10 {
+  .grid-col-5of10, .grid-col-5of10-re {
     width: 100%;
+    padding-top: 2.5rem;
+    padding-bottom: 0;
+  
+  }
+
+
+
+  .flex {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .flex>.grid-col-5of10-re:nth-of-type(1) {
+    order: 2;
+  }
+
+  .flex>.grid-col-5of10-re:nth-of-type(2) {
+    order: 1;
   }
 
   .grid-col-2of10 {

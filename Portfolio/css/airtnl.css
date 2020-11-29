@@ -50,18 +50,35 @@ body {
   color: pink;
 }
 
+h3 {
+  font-size: 2rem;
+  color: palevioletred;
+}
+
 .grid-row {
   display: block;
   background-color: white;
   border-style: none;
 }
 
+@media (max-width: 50em) {
+  .header_text {
+    padding: 2rem;
+  }
 
-img.animated-gif{
+  .grid-row {
+    padding: 0;
+  }
+
+  .process {
+    padding: 4rem;
+  }
+}
+
+img.animated-gif {
   width: 250px;
   height: auto;
 }
-
 
 footer {
   text-align: center;
@@ -73,6 +90,8 @@ footer {
   padding: 1.5rem;
   height: 30vh;
   position: relative;
+  padding-top: 8rem;
+margin-bottom: 2rem;
 }
 
 .social-icon {
