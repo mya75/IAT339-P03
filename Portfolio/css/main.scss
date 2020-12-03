@@ -1,11 +1,17 @@
+$buttongold: #FFD700;
 @mixin margin0 {
   margin: 0;
 }
+$title: "Poppins", sans-serif;
+$subtitle: "Libre Baskerville", serif;
+@mixin fontdefine($fontsize,$fontfamily) {
+  font-size: $fontsize;
+  font-family: $fontfamily;
+}
 
 body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  margin: 0;
+  @include fontdefine(1rem,$title);
+  @include margin0;
   padding: 0;
 }
 
@@ -20,27 +26,23 @@ h3 {
 }
 
 h1 {
-  font-size: 3rem;
-  font-family: 'Poppins', sans-serif;
+  @include fontdefine(3rem,$title);
 }
 
 h2 {
-  font-size: 1.7rem;
-  font-family: 'Poppins', sans-serif;
+  @include fontdefine(1.7rem,$title);
   font-weight: bold;
 }
 
 h3 {
-  font-size: 1.2rem;
-  font-family: 'Libre Baskerville', serif;
+  @include fontdefine(1.2rem,$subtitle);
 }
 
 ol,
 p,
 ul {
-  font-size: 1.1rem;
+  @include fontdefine(1.1rem,'Nunito');
   text-align: left;
-  font-family: 'Nunito', sans-serif;
 }
 
 ol,
@@ -56,29 +58,27 @@ img {
 }
 
 .hd1 {
-  font-size: 5rem;
-  font-family: 'Poppins', sans-serif;
+  @include fontdefine(5rem,$title);
   font-variant: small-caps;
   font-weight: bold;
   color: white;
   @include margin0;
   padding-left: 1.5rem;
   letter-spacing: 0.2rem;
-}
 
-.hd1 a {
-  font-size: 2rem;
-  font-family: 'Poppins', sans-serif;
-  font-variant: small-caps;
-  font-weight: bold;
-  color: black;
-  @include margin0;
-  letter-spacing: 0.2rem;
-  text-decoration: underline;
-}
+  & a {
+    @include fontdefine(2rem,$title);
+    font-variant: small-caps;
+    font-weight: bold;
+    color: black;
+    @include margin0;
+    letter-spacing: 0.2rem;
+    text-decoration: underline;
+  }
 
-.hd1 a:hover {
-  color: gold;
+  & a:hover {
+    color: gold;
+  }
 }
 
 .hd2 {
@@ -123,9 +123,8 @@ li a:hover {
 }
 
 a {
-  font-family: "Open Sans", sans-serif;
+  @include fontdefine(1rem,$title);
   font-weight: 400;
-  font-size: 1rem;
   line-height: 1.3rem;
   text-align: left;
   text-decoration: none;
@@ -140,7 +139,7 @@ a {
 
 button {
   background-color: black;
-  color: #FFD700;
+  color: $buttongold;
   font-weight: bold;
   padding: 0.6rem 1.8rem;
   text-align: center;
@@ -153,39 +152,24 @@ button {
   border: none;
 
   &:hover {
-    background-color: #FFD700;
+    background-color: $buttongold;
     color: black;
   }
 }
-
-input[type=text] {
-  width: 20%;
-  display: inline-block;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  background-repeat: no-repeat;
-  padding: 10px;
+@mixin section-style {
+  padding: 1.5rem;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: grey;
 }
 
 .grid-row {
-  display: block;
   background-color: #FFF0F5;
-  border-style: solid;
-  border-width: 0.5px;
-  border-color: rgba(214, 212, 212, 0.5);
-  padding: 1.5rem;
+  @include section-style;
 }
 
 .grid-row-code {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  padding: 1rem;
-  border-style: solid;
-  border-width: 0.5px;
-  border-color: rgba(229, 229, 229, 0.5);
+  @include section-style;
   background-color: #f2f2f2;
 }
 

@@ -25,14 +25,17 @@ header {
   flex-direction: column;
   padding: 30px;
 }
+
 .header_text h1 {
   font-size: 5rem;
   color: white;
 }
+
 .header_text h2 {
   font-size: 3rem;
   color: gold;
 }
+
 .header_text a {
   background-color: black;
   color: #FFD700;
@@ -51,6 +54,7 @@ header {
   cursor: pointer;
   border: none;
 }
+
 .header_text a:hover {
   background-color: #FFD700;
   color: black;
@@ -62,12 +66,14 @@ header {
   top: 0;
   left: 0;
 }
+
 .nav ul {
   list-style-type: none;
   display: inline-flex;
   text-shadow: 3px 3px 5px black;
 }
-.nav ul li > a {
+
+.nav ul li>a {
   font-size: 2rem;
   letter-spacing: 0.2rem;
 }
@@ -102,6 +108,7 @@ p {
   background-color: #FFF0F5;
   padding: 1rem 1rem 8rem;
 }
+
 #portfolio-content h2 {
   justify-content: center;
   text-align: center;
@@ -131,11 +138,13 @@ p {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media (max-width: 575.98px) {
   .photoContainer {
     grid-template-columns: 1fr;
   }
 }
+
 .grid-row-black {
   display: block;
   background-color: black;
@@ -153,6 +162,7 @@ p {
     padding: 2rem 0;
   }
 }
+
 #h3-test {
   font-size: 1.1em;
   color: gold;
@@ -211,6 +221,7 @@ footer {
   padding: 1rem;
   transition: 0.5s;
 }
+
 .fa-facebook:hover {
   background-color: #3d5b99;
 }
@@ -247,6 +258,7 @@ footer {
   cursor: pointer;
   border: none;
 }
+
 .footer:hover {
   background-color: #FFD700;
   color: black;

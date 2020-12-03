@@ -11,12 +11,14 @@ body {
   top: 0;
   left: 0;
 }
+
 .nav ul {
   list-style-type: none;
   display: inline-flex;
   text-shadow: 3px 3px 5px black;
 }
-.nav ul li > a {
+
+.nav ul li>a {
   font-size: 2rem;
   letter-spacing: 0.2rem;
 }
@@ -61,6 +63,7 @@ h3 {
     padding: 4rem;
   }
 }
+
 img.animated-gif {
   width: 250px;
   height: auto;
@@ -91,6 +94,7 @@ footer {
   padding: 1rem;
   transition: 0.5s;
 }
+
 .fa-facebook:hover {
   background-color: #3d5b99;
 }
@@ -127,6 +131,7 @@ footer {
   cursor: pointer;
   border: none;
 }
+
 .footer:hover {
   background-color: #FFD700;
   color: black;

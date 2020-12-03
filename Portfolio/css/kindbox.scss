@@ -1,5 +1,5 @@
-
-
+$dgreen: #119953;
+$bgreen: #8DDBB3;
 
 body {
   color: white;
@@ -10,7 +10,8 @@ body {
   color: green;
 }
 
-.intro, .nd-title {
+.intro,
+.nd-title {
   color: white;
 }
 
@@ -19,11 +20,11 @@ body {
 }
 
 .nd-title h2 {
-  color: #119953;
+  color: $dgreen;
 }
 
 h3 {
-  color: #8DDBB3;
+  color: $bgreen;
 }
 
 .h2 {
@@ -39,12 +40,9 @@ h3 {
 .processmap {
   padding: 4rem;
 }
-
 @media (max-width: 50em) {
   .processmap {
-    padding: 2rem;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0 2rem;
   }
 }
 
