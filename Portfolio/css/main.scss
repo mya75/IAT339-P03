@@ -8,7 +8,9 @@ $subtitle: "Libre Baskerville", serif;
   font-size: $fontsize;
   font-family: $fontfamily;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   @include fontdefine(1rem,$title);
   @include margin0;
