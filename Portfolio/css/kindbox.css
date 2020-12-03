@@ -1,52 +1,21 @@
-body {
-  color: white;
-  background-color: black;
-}
+body { color: white; background-color: black; }
 
-.header_text {
-  color: green;
-}
+.header_text { color: green; }
 
-.intro,
-.nd-title {
-  color: white;
-}
+.intro, .nd-title { color: white; }
 
-.intro h2 {
-  color: green;
-}
+.intro h2, .nd-title h2 { color: #119953; }
 
-.nd-title h2 {
-  color: #119953;
-}
+h3 { color: #8DDBB3; }
 
-h3 {
-  color: #8DDBB3;
-}
+.h2 { padding-top: 3rem; padding-left: 4rem; color: gold; }
 
-.h2 {
-  padding-top: 3rem;
-  padding-left: 4rem;
-  color: gold;
-}
+.grid-row { background-color: black; }
 
-.grid-row {
-  background-color: black;
-}
+.processmap { padding: 4rem; }
 
-.processmap {
-  padding: 4rem;
-}
+@media (max-width: 50em) { .processmap { padding: 0 2rem; } }
 
-@media (max-width: 50em) {
-  .processmap {
-    padding: 0 2rem;
-  }
-}
-footer {
-  color: gold;
-}
+footer { color: gold; }
 
-.social-icon {
-  color: white;
-}
+.social-icon { color: white; }

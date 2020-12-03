@@ -1,32 +1,17 @@
-.header_text {
-  color: pink;
-}
+.header_text { color: pink; }
 
-.intro,
-.nd-title {
-  color: black;
-}
+.intro { color: black; }
 
-.intro h2 {
-  color: #FF6262;
-}
+.intro h2 { color: #FF6262; }
 
-.nd-title h2 {
-  color: pink;
-}
+.nd-title { color: black; }
 
-h3 {
-  color: #FF6262;
-}
+.nd-title h2 { color: pink; }
 
-.grid-row {
-  background-color: white;
-}
+h3 { color: #FF6262; }
 
-footer {
-  color: black;
-}
+.grid-row { background-color: white; }
 
-.social-icon {
-  color: black;
-}
+footer { color: black; }
+
+.social-icon { color: black; }

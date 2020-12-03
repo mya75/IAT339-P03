@@ -1,37 +1,19 @@
-.header_text {
-  color: blue;
-}
+.header_text { color: blue; }
 
-.intro, .nd-title {
-  color: black;
-}
+.intro { color: black; }
 
-.intro h2 {
-  color: blue;
-}
+.intro h2 { color: blue; }
 
-.nd-title h2 {
-  color: lightblue;
-}
+.nd-title { color: black; }
 
-h3 {
-  color: blue;
-}
+.nd-title h2 { color: lightblue; }
 
-.h2 {
-  padding-top: 3rem;
-  padding-left: 4rem;
-  color: blue;
-}
+h3 { color: blue; }
 
-.grid-row {
-  background-color: white;
-}
+.h2 { padding-top: 3rem; padding-left: 4rem; color: blue; }
 
-footer {
-  color: black;
-}
+.grid-row { background-color: white; }
 
-.social-icon {
-  color: black;
-}
+footer { color: black; }
+
+.social-icon { color: black; }

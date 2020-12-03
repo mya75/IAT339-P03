@@ -1,126 +1,45 @@
 /* This stylesheet covers dimensions of columns as well as its responsiveness among different resolutions*/
 /* With this selector, we are specifying that all objects use the border-box model (not the content-box model)*/
-*, *::after, *::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 /*Here we are using a 'fancy' css selector that is specifying if the class of an item starts with 'grid-col-', then we should apply the styling listed */
-[class^='grid-col-'] {
-  float: left;
-  padding: 0;
-  text-align: center;
-}
-
 /* Assigning width dimensions of columns */
-.grid-col-1of10 {
-  width: 10%;
-  text-align: center;
-}
-
-.grid-col-2of10 {
-  width: 20%;
-  margin: .2rem;
-  text-align: center;
-}
-
-.grid-col-3of10 {
-  width: 30%;
-  padding: .2rem;
-  text-align: center;
-}
-
-.grid-col-5of10 {
-  width: 50%;
-  text-align: left;
-  padding: 2rem;
-}
-
-.grid-col-5of10-re {
-  width: 50%;
-  text-align: left;
-  padding: 2rem;
-}
-
-.grid-row::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 /* @media queries to collapse the columns when width is less than "x" em */
-@media (max-width: 80em) {
-  .grid-col-5of10, .grid-col-5of10-re {
-    width: 50%;
-  }
+* { box-sizing: border-box; }
 
-  .grid-col-2of10 {
-    width: 33.333%;
-  }
+*::after { box-sizing: border-box; }
 
-  .grid-listing {
-    width: 33.333%;
-  }
+*::before { box-sizing: border-box; }
 
-  .grid-col-3of10 {
-    width: 30%;
-    float: left;
-  }
-}
+[class^='grid-col-'] { float: left; padding: 0; text-align: center; }
 
-@media (max-width: 50em) {
-  .grid-col-5of10, .grid-col-5of10-re {
-    width: 100%;
-    padding-top: 2.5rem;
-    padding-bottom: 0;
-  }
+.grid-col-1of10 { width: 10%; text-align: center; }
 
-  .flex {
-    display: flex;
-    flex-flow: row wrap;
-  }
+.grid-col-2of10 { width: 20%; margin: .2rem; text-align: center; }
 
-  .flex>.grid-col-5of10-re:nth-of-type(1) {
-    order: 2;
-  }
+.grid-col-3of10 { width: 30%; padding: .2rem; text-align: center; }
 
-  .flex>.grid-col-5of10-re:nth-of-type(2) {
-    order: 1;
-  }
+.grid-col-5of10 { width: 50%; text-align: left; padding: 2rem; }
 
-  .grid-col-2of10 {
-    width: 100%;
-  }
+.grid-col-5of10-re { width: 50%; text-align: left; padding: 2rem; }
 
-  .grid-listing {
-    width: 100%;
-  }
+.grid-row::after { content: ""; display: block; clear: both; }
 
-  .grid-col-3of10 {
-    width: 100%;
-  }
-}
+@media (max-width: 80em) { .grid-col-5of10 { width: 50%; }
+   .grid-col-5of10-re { width: 50%; }
+   .grid-col-2of10 { width: 33.333%; }
+   .grid-listing { width: 33.333%; }
+   .grid-col-3of10 { width: 30%; float: left; } }
 
-@media (max-width: 31em) {
-  .grid-col-2of10 {
-    width: 100%;
-  }
+@media (max-width: 50em) { .grid-col-5of10 { width: 100%; padding-top: 2.5rem; padding-bottom: 0; }
+   .grid-col-5of10-re { width: 100%; padding-top: 2.5rem; padding-bottom: 0; }
+   .flex { display: flex; flex-flow: row wrap; }
+   .flex > .grid-col-5of10-re:nth-of-type(1) { order: 2; }
+   .flex > .grid-col-5of10-re:nth-of-type(2) { order: 1; }
+   .grid-col-2of10 { width: 100%; }
+   .grid-listing { width: 100%; }
+   .grid-col-3of10 { width: 100%; } }
 
-  .grid-listing {
-    width: 100%;
-  }
-
-  .grid-col-3of10 {
-    width: 100%;
-  }
-
-  .grid-col-1of10 {
-    width: 100%;
-  }
-
-  .button-nav {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
+@media (max-width: 31em) { .grid-col-2of10 { width: 100%; }
+   .grid-listing { width: 100%; }
+   .grid-col-3of10 { width: 100%; }
+   .grid-col-1of10 { width: 100%; }
+   .button-nav { margin-top: 0; margin-bottom: 0; } }

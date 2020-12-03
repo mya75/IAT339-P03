@@ -1,28 +1,13 @@
-body {
-  color: white;
-  background-color: black;
-}
+body { color: white; background-color: black; }
 
-.header_text {
-  color: gold;
-}
+.header_text { color: gold; }
 
-.intro, .nd-title {
-  color: white;
-}
+.intro, .nd-title { color: white; }
 
-h2 {
-  color: gold;
-}
+h2 { color: gold; }
 
-.grid-row {
-  background-color: black;
-}
+.grid-row { background-color: black; }
 
-footer {
-  color: white;
-}
+footer { color: white; }
 
-.social-icon {
-  color: white;
-}
+.social-icon { color: white; }

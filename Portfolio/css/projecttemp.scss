@@ -4,12 +4,10 @@ $facebook: #3d5b99;
 $linkedin: #0073a4;
 $github: #5a32a3;
 $buttongold: #FFD700;
-
 @mixin footer-style {
   padding: 1rem;
   transition: 0.5s;
 }
-
 @mixin center-everything {
   justify-content: center;
   text-align: center;
@@ -17,6 +15,7 @@ $buttongold: #FFD700;
   align-content: center;
   flex-direction: column;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
@@ -114,18 +113,18 @@ footer {
 
 .fa-linkedin {
   @include footer-style;
-}
 
-.fa-linkedin:hover {
-  background-color: $linkedin;
+  &:hover {
+    background-color: $linkedin;
+  }
 }
 
 .fa-github {
   @include footer-style;
-}
 
-.fa-github:hover {
-  background-color: $github;
+  &:hover {
+    background-color: $github;
+  }
 }
 
 .footer {

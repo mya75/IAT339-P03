@@ -8,9 +8,11 @@ $subtitle: "Libre Baskerville", serif;
   font-size: $fontsize;
   font-family: $fontfamily;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   @include fontdefine(1rem,$title);
   @include margin0;
@@ -21,22 +23,19 @@ body {
   background-color: black;
 }
 
-h1,
-h2,
-h3 {
-  @include margin0;
-}
-
 h1 {
+  @include margin0;
   @include fontdefine(3rem,$title);
 }
 
 h2 {
+  @include margin0;
   @include fontdefine(1.7rem,$title);
   font-weight: bold;
 }
 
 h3 {
+  @include margin0;
   @include fontdefine(1.2rem,$subtitle);
 }
 
@@ -76,10 +75,10 @@ img {
     @include margin0;
     letter-spacing: 0.2rem;
     text-decoration: underline;
-  }
 
-  & a:hover {
-    color: gold;
+    &:hover {
+      color: gold;
+    }
   }
 }
 
@@ -100,28 +99,30 @@ nav {
   padding: 2rem;
   overflow: hidden;
   opacity: 1;
+
+  > li {
+    float: left;
+  }
 }
 
-nav > li {
-  float: left;
-}
+li {
+  a {
+    display: block;
+    color: gold;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
 
-li a {
-  display: block;
-  color: gold;
-  font-weight: bold;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  cursor: pointer;
-}
+    &:hover {
+      color: white;
+    }
+  }
 
-li a.active {
-  color: white;
-}
-
-li a:hover {
-  color: white;
+  .active {
+    color: white;
+  }
 }
 
 a {
@@ -194,6 +195,12 @@ button {
   position: relative;
   width: 100%;
   cursor: pointer;
+
+  &:hover {
+    .overlay {
+      opacity: 1;
+    }
+  }
 }
 
 .image {
@@ -215,10 +222,6 @@ button {
   background-color: rgba(0, 0, 0, 0.678);
 }
 
-.image-link:hover .overlay {
-  opacity: 1;
-}
-
 .text {
   color: white;
   font-size: 1.8rem;
@@ -226,7 +229,6 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   text-align: center;
   text-transform: uppercase;
 }

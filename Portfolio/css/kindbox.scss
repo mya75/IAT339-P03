@@ -13,14 +13,10 @@ body {
 .intro,
 .nd-title {
   color: white;
-}
 
-.intro h2 {
-  color: green;
-}
-
-.nd-title h2 {
-  color: $dgreen;
+  h2 {
+    color: $dgreen;
+  }
 }
 
 h3 {

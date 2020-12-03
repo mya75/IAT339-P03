@@ -4,17 +4,20 @@ $darkpink: #FF6262;
   color: pink;
 }
 
-.intro,
+.intro {
+  color: black;
+
+  h2 {
+    color: $darkpink;
+  }
+}
+
 .nd-title {
   color: black;
-}
 
-.intro h2 {
-  color: $darkpink;
-}
-
-.nd-title h2 {
-  color: pink;
+  h2 {
+    color: pink;
+  }
 }
 
 h3 {

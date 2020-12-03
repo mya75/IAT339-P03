@@ -42,17 +42,17 @@ header {
   @include center-everything;
   padding: 30px;
 
-  & h1 {
+  h1 {
     font-size: 5rem;
     color: white;
   }
 
-  & h2 {
+  h2 {
     font-size: 3rem;
     color: gold;
   }
 
-  & a {
+  a {
     background-color: black;
     color: $buttongold;
     font-weight: bold;
@@ -79,14 +79,16 @@ header {
   top: 0;
   left: 0;
 
-  & ul {
+  ul {
     list-style-type: none;
     display: inline-flex;
     text-shadow: 3px 3px 5px black;
 
-    & li > a {
-      font-size: 2rem;
-      letter-spacing: 0.2rem;
+    li {
+      > a {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+      }
     }
   }
 }
@@ -117,7 +119,7 @@ p {
   background-color: $backpink;
   padding: 1rem 1rem 8rem;
 
-  & h2 {
+  h2 {
     @include center-everything;
     padding: 1rem;
   }
@@ -219,18 +221,18 @@ footer {
 
 .fa-linkedin {
   @include footer-style;
-}
 
-.fa-linkedin:hover {
-  background-color: $linkedin;
+  &:hover {
+    background-color: $linkedin;
+  }
 }
 
 .fa-github {
   @include footer-style;
-}
 
-.fa-github:hover {
-  background-color: $github;
+  &:hover {
+    background-color: $github;
+  }
 }
 
 .footer {
