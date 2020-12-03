@@ -1,27 +1,24 @@
+$darkpink: #FF6262;
+
 .header_text {
-  color: blue;
+  color: pink;
 }
 
-.intro, .nd-title {
+.intro,
+.nd-title {
   color: black;
 }
 
 .intro h2 {
-  color: blue;
+  color: $darkpink;
 }
 
 .nd-title h2 {
-  color: lightblue;
+  color: pink;
 }
 
 h3 {
-  color: blue;
-}
-
-.h2 {
-  padding-top: 3rem;
-  padding-left: 4rem;
-  color: blue;
+  color: $darkpink;
 }
 
 .grid-row {

@@ -2,7 +2,8 @@
   color: pink;
 }
 
-.intro, .nd-title {
+.intro,
+.nd-title {
   color: black;
 }
 
@@ -15,7 +16,7 @@
 }
 
 h3 {
-  color: palevioletred;
+  color: #FF6262;
 }
 
 .grid-row {
