@@ -54,7 +54,6 @@ ul {
 
 img {
   height: auto;
-  width: auto;
   max-width: 100%;
 }
 
@@ -205,8 +204,9 @@ button {
 
 .image {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
+
 }
 
 .overlay {
